@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ProjektSzkolnyGR6/1.0.0": {
+        "runtime": {
+          "ProjektSzkolnyGR6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjektSzkolnyGR6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
