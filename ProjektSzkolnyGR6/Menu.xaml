@@ -5,11 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektSzkolnyGR6"
         mc:Ignorable="d"
-        Title="Menu" Height="450" Width="800">
-    <Grid>
-        <Button Content="Powrót"
-                FontSize="40"
-                Margin="200, 100"
-                Click="Back_Click"/>
-    </Grid>
+        Title="Menu" Height="1000" Width="800">
+    <StackPanel>
+        <Label Content="Lista Dań"/>
+        <ListView x:Name="usersListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="5">
+                        <Label Content="{Binding Name}" />
+                        <Label Content="{Binding Age}" />
+                        <Label Content="{Binding Email}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackPanel Background="LightGreen">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Imię, nazwisko" />
+                <TextBox x:Name="nameTextBox" Width="100" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Wiek" />
+                <TextBox x:Name="ageTextBox" Width="100" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Email" />
+                <TextBox x:Name="emailTextBox" Width="100" />
+            </StackPanel>
+            <Button Content="Dodaj użytkownika"
+                    x:Name="addUser" 
+                    Click="addUser_Click"/>
+        </StackPanel>
+        <Button Content="Usuń użytkownika"
+                    x:Name="deleteUser"
+                    Click="deleteUser_Click" />
+        <Button
+            Content="Powrót"
+            Click="Back_Click"/>
+    </StackPanel>
 </Window>

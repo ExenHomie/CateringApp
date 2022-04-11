@@ -17,6 +17,7 @@ namespace ProjektSzkolnyGR6
 {
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace ProjektSzkolnyGR6
         }
 
         //przenoszenie do menu
-        private void MenuMove_Click(object sender, RoutedEventArgs e)
+        private void MenuMove_Click(object sender, RoutedEventArgs e) 
         {
             this.Hide();
             Menu menu = new Menu();

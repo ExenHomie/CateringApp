@@ -8,6 +8,15 @@
 
   <ItemGroup>
     <None Remove="img\logo.png" />
+    <None Remove="img\menu.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\menu.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
   </ItemGroup>
 
   <ItemGroup>

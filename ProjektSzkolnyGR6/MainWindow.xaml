@@ -5,14 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjektSzkolnyGR6"
         mc:Ignorable="d"
-        Title="Projekt" Height="500" Width="300">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF616161" Offset="0.004"/>
-                <GradientStop Color="#FFA0A0A0" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
+        Title="Projekt" Height="1000" Width="800">
+    <Grid Background="#FFFD9540">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -28,33 +22,49 @@
                Grid.ColumnSpan="2"
                MinHeight="140"/>
 
-        <Button Content="Dania"
+        <Button Content="Menu"
                 FontFamily="Century Gothic"
                 Grid.Column="0"
                 Grid.Row="1"
                 Margin="30"
-                Click="MenuMove_Click"/>
+                Click="MenuMove_Click" FontSize="72">
+            <Button.Background>
+                <ImageBrush ImageSource="img/menu.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
 
         <Button Content="Zamówienia"
                 FontFamily="Century Gothic"
                 Grid.Column="1"
                 Grid.Row="1"
                 Margin="30"
-                Click="OrderMove_Click"/>
-        
+                Click="OrderMove_Click" Visibility="Visible">
+            <Button.Background>
+                <ImageBrush ImageSource="img/menu.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+
         <Button Content="Pracownicy"
                 FontFamily="Century Gothic"
                 Grid.Column="0"
                 Grid.Row="2"
                 Margin="30"
-                Click="EmployersMove_Click"/>
+                Click="EmployersMove_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="img/menu.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
 
         <Button Content="Magazyn"
                 FontFamily="Century Gothic"
                 Grid.Column="1"
                 Grid.Row="2"
                 Margin="30"
-                Click="StorageMove_Click"/>
+                Click="StorageMove_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="img/menu.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
 
         <Button Content="Wyjdź"
                 FontFamily="Century Gothic"
@@ -62,9 +72,13 @@
                 Grid.Row="3"
                 MinWidth="50"
                 MinHeight="20" 
-                Margin="125,20,125,20"
+                Margin="115,20,115,20"
                 Grid.ColumnSpan="2"
-                Click="Exit_Click"/>
+                Click="Exit_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="img/menu.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
 
 
     </Grid>
